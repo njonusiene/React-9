@@ -9,21 +9,8 @@ body {
   background: #7bdaf3;
 }
 
-.page {
-  width: 100vh;
-  height: 50px;
-  padding: 30px;
-}
-/* 
-#input-container {
-  display: inline-block;
-  margin-top: 34px;
-  width: 500px;
-  background: red;
-} */
-
 #add {
-  position: absolute;
+  position: fixed;
   right: 25px;
   top: 25px; 
   align-items: center;
@@ -44,37 +31,29 @@ body {
   color:#9ec862
 }
 
-.container {
-  padding-top: 70px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: 35px;
-  
-}
-
-.top {
-  background: #9ec862;
-  width: 50px;
-}
-
 .list-item {
   list-style: none;
-  min-height: 450px;
+  min-height: 350px;
   width: 350px;
-  max-width: 850px;
   background: white;
   color: black;
   border-radius: 5px;
   padding: 15px;
-  margin: 20px auto;
+  margin: 120px auto;
   display: flex;
   flex-direction:column-reverse;
   justify-content:flex-end;
   align-items:flex-start;
   box-shadow: 0 4px 5px #71a7ca;
   box-sizing: border-box;
+  background: white;
+  line-height: 45px;
+}
+
+.icons {
+  background: #9ec862;
+  width: 350px;
+  margin: -15px;
 }
 
 .list-item .remove {
@@ -135,3 +114,4 @@ body {
   cursor: pointer;
   color: black;
 }
+
