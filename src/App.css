@@ -51,9 +51,16 @@ body {
 }
 
 .icons {
+  display: flex;
+  justify-content: flex-end;
   background: #9ec862;
   width: 350px;
   margin: -15px;
+
+}
+
+.icons button {
+  color: white;
 }
 
 .list-item .remove {
