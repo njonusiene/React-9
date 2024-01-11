@@ -19,13 +19,10 @@ function App() {
   }, [listData])
 
   return (
-
-    <div className="page">
+   <>
     <Input setListData={setListData}/>
-      <div className="container">
-      <List listData={listData} setListData={setListData}/>
-      </div>
-    </div>
+    <List listData={listData} setListData={setListData}/>
+    </>
   )
 }
 
