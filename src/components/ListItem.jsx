@@ -45,19 +45,17 @@ const ListItem = ({item, index, handleClick, listData, setListData}) => {
     <li className="list-item" key={index}>
         <div className={isEditMode ? "text hidden" : "text"}>{text}</div>
         <div className="button">
-<div className="icons">
-
-        <button className="edit" onClick={handleEditMode}>
-        <FaRegEdit />
-        </button>
-        <button className="remove" onClick={() => handleClick(index)}>
-        <FaRegTrashAlt />
-        </button>
+            <div className="icons">
+                <button className="edit" onClick={handleEditMode}>
+                <FaRegEdit />
+                </button>
+                <button className="remove" onClick={() => handleClick(index)}>
+                <FaRegTrashAlt />
+                </button>
+                </div>
+             <input ref={inputRef} className={isEditMode ? "" : "hidden"} onBlur={handleBlur} onChange={handleChange} onKeyDown={handleKeyDown} type="textarea" value={text}/>
         </div>
-        <input ref={inputRef} className={isEditMode ? "" : "hidden"} onBlur={handleBlur} onChange={handleChange} onKeyDown={handleKeyDown} type="textarea" value={text}/>
-</div>
     </li>
- 
   )
 }
 
